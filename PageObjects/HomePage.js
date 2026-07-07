@@ -1,5 +1,5 @@
 import BasePage from "./BasePage.js"
-import Signup from "../Components/SignUp.js"
+import SignUp from "../Components/SignUp.js"
 import Login from "../Components/Login.js";
 export default class extends BasePage {
     constructor(page) {
