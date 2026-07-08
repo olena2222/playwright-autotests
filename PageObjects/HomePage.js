@@ -1,10 +1,10 @@
-import BasePage from "./BasePage"
-import Signup from "../Components/Signup"
-import Login from "../Components/Login";
+import BasePage from "./BasePage.js"
+import SignUp from "../Components/SignUp.js"
+import Login from "../Components/Login.js";
 export default class extends BasePage {
     constructor(page) {
         super(page, "/")
-        this.signup = new Signup(page);
+        this.signup = new SignUp(page);
         this.signin=new Login(page);
     }
 }

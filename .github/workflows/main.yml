@@ -1,0 +1,18 @@
+name: Playwright Tests in Docker
+run-name: Playwright Tests run in Docker
+on:
+  push:
+    branches:
+      - gitActionsPlaywright
+  workflow_dispatch:
+jobs:
+  playwright-tests:
+    name: "Run Playwright tests"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: docker/setup-docker-action@v5
+      - uses: actions/checkout@v6
+      - name: Docker build
+        run: docker build -t playwright:pipeline .
+      - name: Docker run
+        run: docker run playwright:pipeline
