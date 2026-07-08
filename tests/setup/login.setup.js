@@ -6,8 +6,8 @@ setup("login", async ({ page }) => {
   const homePage = new HomePage(page);
   await homePage.navigate();
   await homePage.signin.login(
-    process.env.USER_EMAIL_LOGIN,
-    process.env.USER_PASSWORD_LOGIN
+    "kamoko4666@googxs.com",
+    "Ool123456"
   );
   await page.waitForURL("**/panel/garage");
   await page.context().storageState({ path: AUTH_FILE });
