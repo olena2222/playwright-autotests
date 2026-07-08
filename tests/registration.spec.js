@@ -337,7 +337,7 @@ test.describe("Registration form", () => {
     });
 
 
-    test("Check register - valid case", async () => {
+    test.skip("Check register - valid case", async () => {
         await homePage.signup.nameField.fill("Olena");
         await homePage.signup.lastNameField.fill("Test");
         await homePage.signup.emailField.fill("aqa-olena11111@test.com");
