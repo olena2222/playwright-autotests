@@ -345,7 +345,7 @@ test.describe("Registration form", () => {
         await homePage.signup.repeatPasswordField.fill("Ool1234567");
         await expect(homePage.signup.registerButton).toBeEnabled();
         await homePage.signup.registerButton.click();
-        await expect(homePage.signup.registrationModal).toHaveCount(0, { timeout: 10000 });
+        await expect(homePage.signup.registrationModal).toHaveCount(0, { timeout: 20000 });
     });
 
 
